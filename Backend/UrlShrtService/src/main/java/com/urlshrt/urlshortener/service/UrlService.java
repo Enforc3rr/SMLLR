@@ -20,12 +20,16 @@ public class UrlService {
 
         UrlEntity urlEntity = new UrlEntity();
         urlEntity.setMainUrl(url.getMainUrl());
-        urlEntity.setShortenUrlPart("some random character");
+        urlEntity.setShortenUrlPart("random");
         urlEntity.setCreationDate(currentDate);
         urlEntity.setExpirationDate("Some Expiration Date");
 
-        System.out.println(urlEntity.toString());
-
         urlRepo.save(urlEntity);
+
+//        urlRepo.save(urlEntity);
+    }
+
+    public String findUrl(String shortenUrlPart){
+        return urlRepo.findUrl(shortenUrlPart);
     }
 }

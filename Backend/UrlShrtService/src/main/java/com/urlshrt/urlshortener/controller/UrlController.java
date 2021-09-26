@@ -8,21 +8,32 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+
 @RestController
-@RequestMapping("/url")
 public class UrlController {
 
     @Autowired
     UrlService urlService;
 
-    @PostMapping(value = "/add",consumes = "application/json")
+    @PostMapping(value = "/url/add",consumes = "application/json")
     public ResponseEntity<?> addUrl(@RequestBody UrlEntity url){
-
-        System.out.println(url.toString());
 
         urlService.addUrl(url);
 
         return new ResponseEntity<>(
                 new GenericResponse("URL successfully Added",true), HttpStatus.CREATED);
     }
+
+    @GetMapping(value="/{shortenPart}")
+    public ResponseEntity<?> getUrl(@PathVariable String shortenPart){
+        String url = urlService.findUrl(shortenPart);
+
+        if(url!=null){
+            return new ResponseEntity<>(new GenericResponse("URL Found",true,url),HttpStatus.OK);
+        }else{
+            return new ResponseEntity<>(new GenericResponse("URL Not Found",false),HttpStatus.BAD_REQUEST);
+        }
+
+    }
+
 }
