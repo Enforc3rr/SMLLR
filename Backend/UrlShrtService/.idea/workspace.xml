@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f94911d9-58ed-420e-b33a-b57d2544c4f1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/controller/UrlController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/controller/UrlController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/dto/URLRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/dto/URLRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/responses/GenericResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/responses/GenericResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/service/UrlService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/service/UrlService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/UrlshortenerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/UrlshortenerApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/controller/UrlController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/controller/UrlController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/dto/URLRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/dto/URLRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/entity/UrlEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/entity/UrlEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/entity/UserEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/entity/UserEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/responses/GenericResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/responses/GenericResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/service/UrlService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/service/UrlService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/urlshrt/urlshortener/UrlshortenerApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/urlshrt/urlshortener/UrlshortenerApplicationTests.class" afterDir="false" />
-    </list>
+    <list default="true" id="f94911d9-58ed-420e-b33a-b57d2544c4f1" name="Changes" comment="Added URL retrieval API" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,8 +67,16 @@
       <workItem from="1632658286198" duration="5043000" />
       <workItem from="1632663572695" duration="41000" />
       <workItem from="1632663714247" duration="57000" />
-      <workItem from="1632680785580" duration="4091000" />
+      <workItem from="1632680785580" duration="4899000" />
     </task>
+    <task id="LOCAL-00001" summary="Added URL retrieval API">
+      <created>1632697197606</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1632697197606</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,5 +92,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added URL retrieval API" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added URL retrieval API" />
   </component>
 </project>
