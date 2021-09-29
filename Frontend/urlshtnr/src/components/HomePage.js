@@ -4,10 +4,16 @@ import Particles from "particles-bg";
 
 function HomePage() {
   return (
-    <div className="container gx-1 vh-100 d-flex justify-content-center align-items-center ">
+    <div
+      className="container-md gx-1 d-flex justify-content-center align-items-center"
+      style={{ minHeight: "100vh" }}
+    >
       <Particles type="cobweb" num={window.innerWidth / 12} bg={true} />
       <div className="row">
-        <div className="col-md-12 text-center">
+        <div
+          className="col-md-12 text-center"
+          style={{ fontFamily: "Pacifico, cursive" }}
+        >
           <h1 className="display-1">
             <u>SmllR</u>
           </h1>

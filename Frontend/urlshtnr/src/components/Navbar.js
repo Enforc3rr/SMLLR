@@ -10,18 +10,6 @@ function Navbar() {
         <a className="navbar-brand" href="/" alt="">
           <u>SMLLR</u>
         </a>
-
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-mdb-toggle="collapse"
-          data-mdb-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i className="fas fa-bars"></i>
-        </button>
         <form className="form-inline my-2 my-lg-0">
           <button className="btn btn-outline-success my-2 my-sm-0">
             Account
