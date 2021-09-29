@@ -6,12 +6,10 @@ import javax.persistence.Id;
 @Entity
 public class UrlEntity {
     @Id
-    private int id ;
-
-    private String mainUrl;
     private String shortenUrlPart;
-    private String expirationDate;
+    private String mainUrl;
     private String creationDate;
+    private int numberOfClicks;
 
     //private User madeBy;
 
@@ -19,14 +17,6 @@ public class UrlEntity {
 
     public UrlEntity(String mainUrl) {
         this.mainUrl = mainUrl;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getMainUrl() {
@@ -45,14 +35,6 @@ public class UrlEntity {
         this.shortenUrlPart = shortenUrlPart;
     }
 
-    public String getExpirationDate() {
-        return expirationDate;
-    }
-
-    public void setExpirationDate(String expirationDate) {
-        this.expirationDate = expirationDate;
-    }
-
     public String getCreationDate() {
         return creationDate;
     }
@@ -61,14 +43,21 @@ public class UrlEntity {
         this.creationDate = creationDate;
     }
 
+    public int getNumberOfClicks() {
+        return numberOfClicks;
+    }
+
+    public void setNumberOfClicks(int numberOfClicks) {
+        this.numberOfClicks = numberOfClicks;
+    }
+
     @Override
     public String toString() {
         return "UrlEntity{" +
-                "id=" + id +
                 ", mainUrl='" + mainUrl + '\'' +
                 ", shortenUrlPart='" + shortenUrlPart + '\'' +
-                ", expirationDate='" + expirationDate + '\'' +
                 ", creationDate='" + creationDate + '\'' +
+                ", numberOfClicks=" + numberOfClicks +
                 '}';
     }
 }

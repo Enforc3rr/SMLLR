@@ -1,8 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Particles from "particles-bg";
+import { post } from "axios";
+import Swal from "sweetalert2";
 
 function URLInput() {
+  const [url, setUrl] = useState("");
+
+  const clickToAddUrl = () => {
+    const data = {
+      mainUrl: url,
+    };
+    const config = {
+      headers: {
+        "content-type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+      },
+    };
+
+    post("http://localhost:8080/url/add", data, config)
+      .then((response) => {
+        setUrl("");
+        Swal.fire(`${response.data.message}`);
+      })
+      .catch((error) => {
+        Swal.fire(`${error.response.data.message}`);
+      });
+  };
   return (
     <div className="container shadow bg-white rounded card mt-5">
       <Particles
@@ -33,6 +57,8 @@ function URLInput() {
                   className="form-control form-control-lg"
                   type="text"
                   placeholder="LONG URL HERE"
+                  value={url}
+                  onChange={(e) => setUrl(e.target.value)}
                 ></input>
               </div>
             </div>
@@ -40,7 +66,10 @@ function URLInput() {
           </form>
         </div>
         <div className="col-md-12 mt-1 mb-3 text-center">
-          <button className="btn btn-outline-primary btn-lg">
+          <button
+            className="btn btn-outline-primary btn-lg"
+            onClick={clickToAddUrl}
+          >
             Shorten Your URL
           </button>
         </div>

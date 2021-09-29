@@ -22,14 +22,20 @@ public class UrlService {
         urlEntity.setMainUrl(url.getMainUrl());
         urlEntity.setShortenUrlPart("random");
         urlEntity.setCreationDate(currentDate);
-        urlEntity.setExpirationDate("Some Expiration Date");
 
         urlRepo.save(urlEntity);
 
-//        urlRepo.save(urlEntity);
+    }
+    public void updateUrlClicks(UrlEntity url){
+        url.setNumberOfClicks(url.getNumberOfClicks()+1);
+        urlRepo.save(url);
     }
 
-    public String findUrl(String shortenUrlPart){
+    public void deleteUrl(UrlEntity url){
+        urlRepo.deleteById(url.getShortenUrlPart());
+    }
+
+    public UrlEntity findUrl(String shortenUrlPart){
         return urlRepo.findUrl(shortenUrlPart);
     }
 }
