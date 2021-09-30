@@ -24,7 +24,11 @@ function URLInput() {
         Swal.fire(`${response.data.message}`);
       })
       .catch((error) => {
-        Swal.fire(`${error.response.data.message}`);
+        if (error) {
+          Swal.fire(`${error.response.data.message}`);
+        } else {
+          Swal.fire(`Some Error Has Occured`);
+        }
       });
   };
   return (

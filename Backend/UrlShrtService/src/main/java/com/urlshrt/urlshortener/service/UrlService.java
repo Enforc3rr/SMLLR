@@ -13,7 +13,7 @@ public class UrlService {
     @Autowired
     URLRepo urlRepo;
 
-    public void addUrl(UrlEntity url){
+    public UrlEntity addUrl(UrlEntity url){
         Date date = new Date();
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
         String currentDate = simpleDateFormat.format(date);
@@ -23,8 +23,7 @@ public class UrlService {
         urlEntity.setShortenUrlPart("random");
         urlEntity.setCreationDate(currentDate);
 
-        urlRepo.save(urlEntity);
-
+        return urlRepo.save(urlEntity);
     }
     public void updateUrlClicks(UrlEntity url){
         url.setNumberOfClicks(url.getNumberOfClicks()+1);
