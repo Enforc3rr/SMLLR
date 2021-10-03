@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light shadow-5-strong">
       <div className="container-fluid">
-        <a className="navbar-brand" href="/sharebin" alt="">
+        <a className="navbar-brand" href="/sb" alt="">
           <u>ShareBin</u>
         </a>
         <a className="navbar-brand" href="/" alt="">
