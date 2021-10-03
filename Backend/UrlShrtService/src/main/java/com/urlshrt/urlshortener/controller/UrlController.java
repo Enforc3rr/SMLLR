@@ -9,6 +9,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.concurrent.CompletableFuture;
+
 
 @RestController
 @RequestMapping("/url")
@@ -28,7 +30,8 @@ public class UrlController {
         UrlEntity savedUrl = urlService.addUrl(url);
 
         return new ResponseEntity<>(
-                new GenericResponse("You can access your URL @ http://www.smllr.com/" + savedUrl.getShortenUrlPart(),true,url.getMainUrl()), HttpStatus.CREATED);
+                new GenericResponse("You can access your URL @ http://www.smllr.com/" +
+                        savedUrl.getShortenUrlPart(),true,url.getMainUrl()), HttpStatus.CREATED);
     }
 
     @GetMapping(value="/{shortenPart}")
@@ -40,20 +43,25 @@ public class UrlController {
                 if(url.getNumberOfClicks() < 4){ //&& url.getUploadedBy.equals("anon");
                     urlService.updateUrlClicks(url);
                     return new ResponseEntity<>(new GenericResponse("URL Found",true,url.getMainUrl()),HttpStatus.OK);
-                }else if(url.getNumberOfClicks() >= 4 && url.getNumberOfClicks() < 9){
+                }else {
                     urlService.updateUrlClicks(url);
                     urlCachingService.addUrlToCache(url);
                     return new ResponseEntity<>(new GenericResponse("URL Found",true,url.getMainUrl()),HttpStatus.OK);
-                }else{
-                    urlService.deleteUrl(url);
-                    return new ResponseEntity<>(new GenericResponse("URL Not Found",false,url.getMainUrl()),HttpStatus.NOT_FOUND);
                 }
             }else{
                 return new ResponseEntity<>(new GenericResponse("URL Not Found",false),HttpStatus.NOT_FOUND);
             }
-        }else{
-            System.out.println("Fetching URL From Cache");
+        }else if(urlInCache.getNumberOfClicks() >= 4 && urlInCache.getNumberOfClicks() < 9){
+            // A-sync calling UpdateUrlClicks
+            CompletableFuture.runAsync(()->{
+                urlService.updateUrlClicks(urlInCache);
+                urlCachingService.updateClicksInCache(urlInCache);
+            });
             return new ResponseEntity<>(new GenericResponse("URL Found",true,urlInCache.getMainUrl()),HttpStatus.OK);
+        }else{
+            urlService.deleteUrl(urlInCache);
+            urlCachingService.deleteUrlFromCacheById(urlInCache.getShortenUrlPart());
+            return new ResponseEntity<>(new GenericResponse("URL Not Found",false),HttpStatus.NOT_FOUND);
         }
     }
 }

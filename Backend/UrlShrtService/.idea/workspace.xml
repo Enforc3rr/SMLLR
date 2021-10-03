@@ -4,32 +4,17 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f94911d9-58ed-420e-b33a-b57d2544c4f1" name="Changes" comment="Added URL retrieval API">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_3_6_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/dto/UrlCachingRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/dto/UrlCachingRepoImplementation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/service/UrlCachingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/service/UrlCachingServiceImplementation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/service/UrlServiceImplementation.java" afterDir="false" />
+    <list default="true" id="f94911d9-58ed-420e-b33a-b57d2544c4f1" name="Changes" comment="Made Some Changes On Navbar on FE">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/UrlshortenerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/UrlshortenerApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/controller/UrlController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/controller/UrlController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/entity/UrlEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/entity/UrlEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/service/UrlService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/service/UrlService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/dto/UrlCachingRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/dto/UrlCachingRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/dto/UrlCachingRepoImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/dto/UrlCachingRepoImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/service/UrlCachingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/service/UrlCachingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/service/UrlCachingServiceImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/service/UrlCachingServiceImplementation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/UrlshortenerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/UrlshortenerApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/controller/UrlController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/controller/UrlController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/entity/UrlEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/entity/UrlEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/service/UrlService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/service/UrlService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/urlshortener.iml" beforeDir="false" afterPath="$PROJECT_DIR$/urlshortener.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Frontend/urlshtnr/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/urlshtnr/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Frontend/urlshtnr/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/urlshtnr/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Frontend/urlshtnr/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/urlshtnr/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Frontend/urlshtnr/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/urlshtnr/src/components/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/dto/UrlCachingRepoImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/dto/UrlCachingRepoImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/service/UrlCachingServiceImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/service/UrlCachingServiceImplementation.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +59,11 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="settings.editor.selected.configurable" value="reactor" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+    <option name="stackFrameCustomizationEnabled" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -108,7 +97,8 @@
       <workItem from="1633030474279" duration="4412000" />
       <workItem from="1633119980386" duration="1313000" />
       <workItem from="1633184646952" duration="1810000" />
-      <workItem from="1633264415925" duration="5820000" />
+      <workItem from="1633264415925" duration="6288000" />
+      <workItem from="1633276764926" duration="6904000" />
     </task>
     <task id="LOCAL-00001" summary="Added URL retrieval API">
       <created>1632697197606</created>
@@ -117,11 +107,141 @@
       <option name="project" value="LOCAL" />
       <updated>1632697197606</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added Redis Url Caching">
+      <created>1633271303611</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1633271303612</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added Redis Url Caching">
+      <created>1633271317526</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1633271317526</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Made Some Changes On Navbar on FE">
+      <created>1633271340452</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1633271340452</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="java:org.slf4j:jul-to-slf4j" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.xml.bind:jakarta.xml.bind-api" />
+    <option featureType="dependencySupport" implementationName="java:org.javassist:javassist" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.security:spring-security-web" />
+    <option featureType="dependencySupport" implementationName="java:com.zaxxer:HikariCP" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
+    <option featureType="dependencySupport" implementationName="java:net.minidev:accessors-smart" />
+    <option featureType="dependencySupport" implementationName="java:org.aspectj:aspectjweaver" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml:classmate" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.tomcat.embed:tomcat-embed-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-test" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml.jackson.datatype:jackson-datatype-jsr310" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate:hibernate-core" />
+    <option featureType="dependencySupport" implementationName="java:io.netty:netty-transport" />
+    <option featureType="dependencySupport" implementationName="java:org.glassfish.jaxb:jaxb-runtime" />
+    <option featureType="dependencySupport" implementationName="java:org.skyscreamer:jsonassert" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.tomcat.embed:tomcat-embed-websocket" />
+    <option featureType="dependencySupport" implementationName="java:ch.qos.logback:logback-classic" />
+    <option featureType="dependencySupport" implementationName="java:org.glassfish.jaxb:txw2" />
+    <option featureType="dependencySupport" implementationName="java:org.mockito:mockito-junit-jupiter" />
+    <option featureType="dependencySupport" implementationName="java:org.opentest4j:opentest4j" />
+    <option featureType="dependencySupport" implementationName="java:org.objenesis:objenesis" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-tx" />
+    <option featureType="dependencySupport" implementationName="java:org.junit.jupiter:junit-jupiter" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-keyvalue" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter-data-redis" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-jcl" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-web" />
+    <option featureType="dependencySupport" implementationName="java:io.lettuce:lettuce-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter-logging" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter-aop" />
+    <option featureType="dependencySupport" implementationName="java:ch.qos.logback:logback-core" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml.jackson.core:jackson-databind" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.logging.log4j:log4j-to-slf4j" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter" />
+    <option featureType="dependencySupport" implementationName="java:org.jboss.logging:jboss-logging" />
+    <option featureType="dependencySupport" implementationName="java:org.slf4j:slf4j-api" />
+    <option featureType="dependencySupport" implementationName="java:org.ow2.asm:asm" />
+    <option featureType="dependencySupport" implementationName="java:antlr:antlr" />
+    <option featureType="dependencySupport" implementationName="java:org.yaml:snakeyaml" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-autoconfigure" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-test-autoconfigure" />
+    <option featureType="dependencySupport" implementationName="java:io.projectreactor:reactor-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter-json" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-expression" />
+    <option featureType="dependencySupport" implementationName="java:org.reactivestreams:reactive-streams" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml.jackson.datatype:jackson-datatype-jdk8" />
+    <option featureType="dependencySupport" implementationName="java:mysql:mysql-connector-java" />
+    <option featureType="dependencySupport" implementationName="java:org.assertj:assertj-core" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml.jackson.module:jackson-module-parameter-names" />
+    <option featureType="dependencySupport" implementationName="java:com.vaadin.external.google:android-json" />
+    <option featureType="dependencySupport" implementationName="java:org.apiguardian:apiguardian-api" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-jdbc" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter-jdbc" />
+    <option featureType="dependencySupport" implementationName="java:org.mockito:mockito-core" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.transaction:jakarta.transaction-api" />
+    <option featureType="dependencySupport" implementationName="java:net.bytebuddy:byte-buddy" />
+    <option featureType="dependencySupport" implementationName="java:org.xmlunit:xmlunit-core" />
+    <option featureType="dependencySupport" implementationName="java:org.junit.jupiter:junit-jupiter-params" />
+    <option featureType="dependencySupport" implementationName="java:org.hamcrest:hamcrest" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter-data-jpa" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
+    <option featureType="dependencySupport" implementationName="java:org.junit.platform:junit-platform-engine" />
+    <option featureType="dependencySupport" implementationName="java:net.bytebuddy:byte-buddy-agent" />
+    <option featureType="dependencySupport" implementationName="java:org.jboss:jandex" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-aspects" />
+    <option featureType="dependencySupport" implementationName="java:io.netty:netty-resolver" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-oxm" />
+    <option featureType="dependencySupport" implementationName="java:com.h2database:h2" />
+    <option featureType="dependencySupport" implementationName="java:org.dom4j:dom4j" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter-test" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-beans" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.commons:commons-pool2" />
+    <option featureType="dependencySupport" implementationName="java:com.jayway.jsonpath:json-path" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate.common:hibernate-commons-annotations" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.security:spring-security-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-jpa" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.activation:jakarta.activation-api" />
+    <option featureType="dependencySupport" implementationName="java:io.netty:netty-buffer" />
+    <option featureType="dependencySupport" implementationName="java:io.netty:netty-common" />
+    <option featureType="dependencySupport" implementationName="java:org.junit.jupiter:junit-jupiter-engine" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
+    <option featureType="dependencySupport" implementationName="java:io.netty:netty-codec" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.security:spring-security-crypto" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter-tomcat" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml.jackson.core:jackson-annotations" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-test" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml.jackson.core:jackson-core" />
+    <option featureType="dependencySupport" implementationName="java:org.junit.platform:junit-platform-commons" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.annotation:jakarta.annotation-api" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-orm" />
+    <option featureType="dependencySupport" implementationName="java:redis.clients:jedis" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-context-support" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.security:spring-security-test" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-context" />
+    <option featureType="dependencySupport" implementationName="java:com.sun.istack:istack-commons-runtime" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-aop" />
+    <option featureType="dependencySupport" implementationName="java:io.netty:netty-handler" />
+    <option featureType="dependencySupport" implementationName="java:org.junit.jupiter:junit-jupiter-api" />
+    <option featureType="dependencySupport" implementationName="java:net.minidev:json-smart" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter-web" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.tomcat.embed:tomcat-embed-el" />
+    <option featureType="dependencySupport" implementationName="java:com.sun.activation:jakarta.activation" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.logging.log4j:log4j-api" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-redis" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -137,6 +257,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added URL retrieval API" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added URL retrieval API" />
+    <MESSAGE value="Added Redis Url Caching" />
+    <MESSAGE value="Made Some Changes On Navbar on FE" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made Some Changes On Navbar on FE" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

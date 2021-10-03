@@ -12,4 +12,6 @@ public interface UrlCachingRepo {
 
     boolean deleteUrl(String shortenPart);
 
+    void updateCountInRedis(UrlEntity url);
+
 }

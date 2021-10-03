@@ -24,4 +24,9 @@ public class UrlCachingServiceImplementation implements UrlCachingService{
     public UrlEntity fetchUrlFromCacheById(String shortenUrlPart) {
         return urlCachingRepo.getUrl(shortenUrlPart);
     }
+
+    @Override
+    public void updateClicksInCache(UrlEntity url) {
+        urlCachingRepo.updateCountInRedis(url);
+    }
 }

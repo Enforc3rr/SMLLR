@@ -24,13 +24,7 @@ public class UrlCachingRepoImplementation implements UrlCachingRepo {
     }
     @Override
     public UrlEntity getUrl(String shortenPart){
-        UrlEntity url = (UrlEntity) redisTemplate.opsForHash().get(KEY,shortenPart);
-        if(url!=null){
-            return url;
-        }else{
-            System.out.println("URL NOT FOUND " + shortenPart );
-            return null;
-        }
+        return (UrlEntity) redisTemplate.opsForHash().get(KEY,shortenPart);
     }
     @Override
     public boolean deleteUrl(String shortenPart){
@@ -41,5 +35,9 @@ public class UrlCachingRepoImplementation implements UrlCachingRepo {
             System.out.println("Error While Deleting Data From Cache");
             return false;
         }
+    }
+    @Override
+    public void updateCountInRedis(UrlEntity url){
+        redisTemplate.opsForHash().put(KEY,url.getShortenUrlPart(),url);
     }
 }
