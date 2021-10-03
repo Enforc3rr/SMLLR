@@ -5,13 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f94911d9-58ed-420e-b33a-b57d2544c4f1" name="Changes" comment="Added URL retrieval API">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_3_6_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/dto/UrlCachingRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/dto/UrlCachingRepoImplementation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/service/UrlCachingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/service/UrlCachingServiceImplementation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/service/UrlServiceImplementation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/UrlshortenerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/UrlshortenerApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/controller/UrlController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/controller/UrlController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/entity/UrlEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/entity/UrlEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/service/UrlService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/service/UrlService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/UrlshortenerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/UrlshortenerApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/controller/UrlController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/controller/UrlController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/entity/UrlEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/entity/UrlEntity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/service/UrlService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/service/UrlService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/urlshortener.iml" beforeDir="false" afterPath="$PROJECT_DIR$/urlshortener.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frontend/urlshtnr/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/urlshtnr/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frontend/urlshtnr/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/urlshtnr/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frontend/urlshtnr/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/urlshtnr/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Frontend/urlshtnr/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/urlshtnr/src/components/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Frontend/urlshtnr/src/components/URLInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/urlshtnr/src/components/URLInput.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +46,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1yg1BlXy03lLSb9IsQSEVDUvYBF" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -79,7 +105,10 @@
       <workItem from="1632739907001" duration="39000" />
       <workItem from="1632922559270" duration="6269000" />
       <workItem from="1633020276007" duration="2758000" />
-      <workItem from="1633030474279" duration="4074000" />
+      <workItem from="1633030474279" duration="4412000" />
+      <workItem from="1633119980386" duration="1313000" />
+      <workItem from="1633184646952" duration="1810000" />
+      <workItem from="1633264415925" duration="5820000" />
     </task>
     <task id="LOCAL-00001" summary="Added URL retrieval API">
       <created>1632697197606</created>

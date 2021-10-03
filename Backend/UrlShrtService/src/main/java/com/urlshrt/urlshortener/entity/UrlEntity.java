@@ -1,12 +1,16 @@
 package com.urlshrt.urlshortener.entity;
 
+import org.springframework.data.redis.core.RedisHash;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.io.Serializable;
 
 @Entity
-public class UrlEntity {
+public class UrlEntity implements Serializable {
     @Id
     private String shortenUrlPart;
+
     private String mainUrl;
     private String creationDate;
     private int numberOfClicks;

@@ -2,6 +2,7 @@ package com.urlshrt.urlshortener.controller;
 
 import com.urlshrt.urlshortener.entity.UrlEntity;
 import com.urlshrt.urlshortener.responses.GenericResponse;
+import com.urlshrt.urlshortener.service.UrlCachingService;
 import com.urlshrt.urlshortener.service.UrlService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -17,6 +18,10 @@ public class UrlController {
     @Autowired
     UrlService urlService;
 
+    @Autowired
+    UrlCachingService urlCachingService;
+
+
     @PostMapping(value = "/add",consumes = "application/json")
     public ResponseEntity<?> addUrl(@RequestBody UrlEntity url){
 
@@ -28,19 +33,27 @@ public class UrlController {
 
     @GetMapping(value="/{shortenPart}")
     public ResponseEntity<?> getUrl(@PathVariable String shortenPart){
-        UrlEntity url = urlService.findUrl(shortenPart);
-        if(url!=null){
-            if(url.getNumberOfClicks() < 9){ //&& url.getUploadedBy.equals("anon");
-                urlService.updateUrlClicks(url);
-                return new ResponseEntity<>(new GenericResponse("URL Found",true,url.getMainUrl()),HttpStatus.OK);
+        UrlEntity urlInCache = urlCachingService.fetchUrlFromCacheById(shortenPart);
+        if(urlInCache==null){
+            UrlEntity url = urlService.findUrl(shortenPart);
+            if(url!=null){
+                if(url.getNumberOfClicks() < 4){ //&& url.getUploadedBy.equals("anon");
+                    urlService.updateUrlClicks(url);
+                    return new ResponseEntity<>(new GenericResponse("URL Found",true,url.getMainUrl()),HttpStatus.OK);
+                }else if(url.getNumberOfClicks() >= 4 && url.getNumberOfClicks() < 9){
+                    urlService.updateUrlClicks(url);
+                    urlCachingService.addUrlToCache(url);
+                    return new ResponseEntity<>(new GenericResponse("URL Found",true,url.getMainUrl()),HttpStatus.OK);
+                }else{
+                    urlService.deleteUrl(url);
+                    return new ResponseEntity<>(new GenericResponse("URL Not Found",false,url.getMainUrl()),HttpStatus.NOT_FOUND);
+                }
             }else{
-                urlService.deleteUrl(url);
-                return new ResponseEntity<>(new GenericResponse("URL Not Found",false,url.getMainUrl()),HttpStatus.NOT_FOUND);
+                return new ResponseEntity<>(new GenericResponse("URL Not Found",false),HttpStatus.NOT_FOUND);
             }
         }else{
-            System.out.println("Reached Here");
-            return new ResponseEntity<>(new GenericResponse("URL Not Found",false),HttpStatus.NOT_FOUND);
+            System.out.println("Fetching URL From Cache");
+            return new ResponseEntity<>(new GenericResponse("URL Found",true,urlInCache.getMainUrl()),HttpStatus.OK);
         }
     }
-
 }
