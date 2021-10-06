@@ -35,7 +35,7 @@ public class UrlController {
     }
 
     @GetMapping(value="/{shortenPart}")
-    public ResponseEntity<?> getUrl(@PathVariable String shortenPart){
+    public ResponseEntity<?> getUrl(@PathVariable("shortenPart") String shortenPart){
         UrlEntity urlInCache = urlCachingService.fetchUrlFromCacheById(shortenPart);
         if(urlInCache==null){
             UrlEntity url = urlService.findUrl(shortenPart);

@@ -4,17 +4,14 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f94911d9-58ed-420e-b33a-b57d2544c4f1" name="Changes" comment="Made Some Changes On Navbar on FE">
+    <list default="true" id="f94911d9-58ed-420e-b33a-b57d2544c4f1" name="Changes" comment="Added Deletion Part On Redis And MySQL And Improved Bug in URL count">
+      <change afterPath="$PROJECT_DIR$/../KeyGenerationService/configuration/databaseConfiguration.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KeyGenerationService/controller/keyGenController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KeyGenerationService/models/keyGenModel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/controller/UrlController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/controller/UrlController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/dto/UrlCachingRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/dto/UrlCachingRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/dto/UrlCachingRepoImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/dto/UrlCachingRepoImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/service/UrlCachingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/service/UrlCachingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/service/UrlCachingServiceImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/service/UrlCachingServiceImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/controller/UrlController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/controller/UrlController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/dto/UrlCachingRepoImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/dto/UrlCachingRepoImplementation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/service/UrlCachingServiceImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/service/UrlCachingServiceImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frontend/urlshtnr/src/components/URLInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/urlshtnr/src/components/URLInput.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +56,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reactor" />
   </component>
   <component name="ReactorSettings">
@@ -98,7 +96,9 @@
       <workItem from="1633119980386" duration="1313000" />
       <workItem from="1633184646952" duration="1810000" />
       <workItem from="1633264415925" duration="6288000" />
-      <workItem from="1633276764926" duration="6904000" />
+      <workItem from="1633276764926" duration="8556000" />
+      <workItem from="1633365995922" duration="608000" />
+      <workItem from="1633516389091" duration="1054000" />
     </task>
     <task id="LOCAL-00001" summary="Added URL retrieval API">
       <created>1632697197606</created>
@@ -128,7 +128,21 @@
       <option name="project" value="LOCAL" />
       <updated>1633271340452</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added Deletion Part On Redis And MySQL And Improved Bug in URL count">
+      <created>1633283792014</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1633283792014</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added Deletion Part On Redis And MySQL And Improved Bug in URL count">
+      <created>1633284133074</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1633284133074</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,7 +273,8 @@
     <MESSAGE value="Added URL retrieval API" />
     <MESSAGE value="Added Redis Url Caching" />
     <MESSAGE value="Made Some Changes On Navbar on FE" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made Some Changes On Navbar on FE" />
+    <MESSAGE value="Added Deletion Part On Redis And MySQL And Improved Bug in URL count" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Deletion Part On Redis And MySQL And Improved Bug in URL count" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
