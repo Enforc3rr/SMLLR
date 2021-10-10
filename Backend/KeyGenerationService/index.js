@@ -8,6 +8,7 @@ const keyGenerator = require("./utils/keyGenAndStore");
 const keyRouter = require("./routes/keysRoute");
 
 
+app.use(express.json());
 app.use(express.urlencoded({extended : true}));
 app.use("/key",keyRouter);
 
@@ -16,7 +17,7 @@ database()
     .then(()=>console.log("Connected To Database"))
     .catch(()=>console.log("Connection To Database Failed"));
 
-nodeSchedule.scheduleJob("* * * * *",async ()=>{
+nodeSchedule.scheduleJob("*/2 * * * *",async ()=>{
     await keyGenerator();
 })
 
