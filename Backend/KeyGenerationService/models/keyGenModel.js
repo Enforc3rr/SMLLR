@@ -8,8 +8,9 @@ const schema = new mongoose.Schema({
     },
     isBeingUsed : {
         type : Boolean ,
-        required : true
+        required : true ,
+        default : false
     }
 });
 
-module.exports = mongoose.model("key",schema);
+module.exports = mongoose.model("keys",schema);

@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f94911d9-58ed-420e-b33a-b57d2544c4f1" name="Changes" comment="Added Deletion Part On Redis And MySQL And Improved Bug in URL count">
-      <change afterPath="$PROJECT_DIR$/../KeyGenerationService/configuration/databaseConfiguration.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KeyGenerationService/controller/keyGenController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KeyGenerationService/models/keyGenModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KeyGenerationService/configuration/databaseConfiguration.js" beforeDir="false" afterPath="$PROJECT_DIR$/../KeyGenerationService/configuration/databaseConfiguration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KeyGenerationService/controller/keyGenController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../KeyGenerationService/controller/keyGenController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KeyGenerationService/utils/keyGenAndStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/../KeyGenerationService/utils/keyGenAndStore.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/controller/UrlController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/controller/UrlController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/controller/UrlController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/controller/UrlController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/service/UrlServiceImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/service/UrlServiceImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/service/UrlServiceImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/service/UrlServiceImplementation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Frontend/urlshtnr/src/components/URLInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/urlshtnr/src/components/URLInput.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,6 +99,7 @@
       <workItem from="1633276764926" duration="8556000" />
       <workItem from="1633365995922" duration="608000" />
       <workItem from="1633516389091" duration="1054000" />
+      <workItem from="1633595317964" duration="2727000" />
     </task>
     <task id="LOCAL-00001" summary="Added URL retrieval API">
       <created>1632697197606</created>

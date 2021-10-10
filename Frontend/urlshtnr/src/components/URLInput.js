@@ -7,7 +7,16 @@ import Swal from "sweetalert2";
 function URLInput() {
   const [url, setUrl] = useState("");
 
+  const correctingUrl = () => {
+    if (!(url.startsWith("http://www.") || url.startsWith("https://www."))) {
+      setUrl("http://www." + url);
+    } else if (!(url.startsWith("http") && url.startsWith("www."))) {
+      setUrl("http://" + url);
+    }
+  };
   const clickToAddUrl = () => {
+    correctingUrl();
+    console.log(url);
     const data = {
       mainUrl: url,
     };

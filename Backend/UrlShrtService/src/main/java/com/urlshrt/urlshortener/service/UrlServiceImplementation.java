@@ -18,7 +18,6 @@ public class UrlServiceImplementation implements UrlService {
         Date date = new Date();
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
         String currentDate = simpleDateFormat.format(date);
-
         UrlEntity urlEntity = new UrlEntity();
         urlEntity.setMainUrl(url.getMainUrl());
         urlEntity.setShortenUrlPart("random");
