@@ -2,6 +2,7 @@ package com.urlshrt.urlshortener.service;
 
 import com.urlshrt.urlshortener.dto.URLRepo;
 import com.urlshrt.urlshortener.entity.UrlEntity;
+import com.urlshrt.urlshortener.utils.KeyUtilService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,6 +13,8 @@ import java.util.Date;
 public class UrlServiceImplementation implements UrlService {
     @Autowired
     URLRepo urlRepo;
+    @Autowired
+    KeyUtilService keyUtilService;
 
     @Override
     public UrlEntity addUrl(UrlEntity url){
@@ -20,7 +23,9 @@ public class UrlServiceImplementation implements UrlService {
         String currentDate = simpleDateFormat.format(date);
         UrlEntity urlEntity = new UrlEntity();
         urlEntity.setMainUrl(url.getMainUrl());
-        urlEntity.setShortenUrlPart("random");
+
+        urlEntity.setShortenUrlPart(keyUtilService.gettingKeyFromKeyGenerationService());
+
         urlEntity.setCreationDate(currentDate);
 
         return urlRepo.save(urlEntity);

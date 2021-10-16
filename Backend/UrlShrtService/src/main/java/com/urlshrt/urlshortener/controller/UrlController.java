@@ -4,6 +4,7 @@ import com.urlshrt.urlshortener.entity.UrlEntity;
 import com.urlshrt.urlshortener.responses.GenericResponse;
 import com.urlshrt.urlshortener.service.UrlCachingService;
 import com.urlshrt.urlshortener.service.UrlService;
+import com.urlshrt.urlshortener.utils.KeyUtilService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,6 +24,8 @@ public class UrlController {
     @Autowired
     UrlCachingService urlCachingService;
 
+    @Autowired
+    KeyUtilService keyUtilService;
 
     @PostMapping(value = "/add",consumes = "application/json")
     public ResponseEntity<?> addUrl(@RequestBody UrlEntity url){
@@ -30,23 +33,28 @@ public class UrlController {
         UrlEntity savedUrl = urlService.addUrl(url);
 
         return new ResponseEntity<>(
-                new GenericResponse("You can access your URL @ http://www.smllr.com/" +
+                new GenericResponse("You can access your URL @ http://www.smllr.com/sm/" +
                         savedUrl.getShortenUrlPart(),true,url.getMainUrl()), HttpStatus.CREATED);
     }
 
     @GetMapping(value="/{shortenPart}")
     public ResponseEntity<?> getUrl(@PathVariable("shortenPart") String shortenPart){
+
         UrlEntity urlInCache = urlCachingService.fetchUrlFromCacheById(shortenPart);
+
         if(urlInCache==null){
+
             UrlEntity url = urlService.findUrl(shortenPart);
+
             if(url!=null){
+                GenericResponse genericResponse = new GenericResponse("URL Found",true,url.getMainUrl());
                 if(url.getNumberOfClicks() < 4){ //&& url.getUploadedBy.equals("anon");
                     urlService.updateUrlClicks(url);
-                    return new ResponseEntity<>(new GenericResponse("URL Found",true,url.getMainUrl()),HttpStatus.OK);
+                    return new ResponseEntity<>(genericResponse,HttpStatus.OK);
                 }else {
                     urlService.updateUrlClicks(url);
                     urlCachingService.addUrlToCache(url);
-                    return new ResponseEntity<>(new GenericResponse("URL Found",true,url.getMainUrl()),HttpStatus.OK);
+                    return new ResponseEntity<>(genericResponse,HttpStatus.OK);
                 }
             }else{
                 return new ResponseEntity<>(new GenericResponse("URL Not Found",false),HttpStatus.NOT_FOUND);
@@ -61,6 +69,7 @@ public class UrlController {
         }else{
             urlService.deleteUrl(urlInCache);
             urlCachingService.deleteUrlFromCacheById(urlInCache.getShortenUrlPart());
+            keyUtilService.updatingDeletedKeyStatus(urlInCache.getShortenUrlPart());
             return new ResponseEntity<>(new GenericResponse("URL Not Found",false),HttpStatus.NOT_FOUND);
         }
     }
