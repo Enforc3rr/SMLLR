@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Redirect from "./components/Redirect";
 import Sharebin from "./components/Sharebin";
+import DisplayMD from "./components/DisplayMD";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
           <Route exact path="/" component={HomePage} />
           <Route exact path="/sb" component={Sharebin} />
 
-          <Route path="/sb/:sharebinId" />
+          <Route path="/sb/:sharebinId" component={DisplayMD} />
           <Footer />
         </div>
       </Switch>

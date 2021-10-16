@@ -3,12 +3,40 @@ import MDEditor from "@uiw/react-md-editor";
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
 import Particles from "particles-bg";
+import { post } from "axios";
+import Swal from "sweetalert2";
 
 function Sharebin() {
-  const [text, setText] = useState("");
+  const [text, setText] = useState("### Enter Text In Markdown Format Here");
+  const [title, setTitle] = useState("");
+
+  const onCreate = () => {
+    const shareBinDataDetails = {
+      title,
+    };
+    const config = {
+      headers: {
+        "content-type": "multipart/form-data",
+        "Allow-Access-Allow-Origin": "*",
+      },
+    };
+    const url = "";
+    const formData = new FormData();
+
+    formData.append("sharebinTitle", shareBinDataDetails);
+    formData.append("sharebinCode", text);
+
+    post(url, formData, config).then((response) => {
+      console.log(response);
+      Swal.fire(response.data.message);
+      setTitle("");
+      setText("");
+    });
+  };
+
   return (
     <div
-      className="container-md shadow"
+      className="container-md shadow mt-3 mb-3"
       style={{
         minHeight: "100vh",
         backgroundColor: "rgba(255, 255, 255, 0.8)",
@@ -37,6 +65,18 @@ function Sharebin() {
             </div>
           </div>
         </div>
+        <div className="col-md-8 mt-3 mb-3 text-center">
+          <div className="form-outline">
+            <input
+              type="text"
+              id="formControlLg"
+              className="form-control form-control-lg"
+              onChange={(e) => setTitle(e.target.value)}
+              value={title}
+              placeholder="Enter Title"
+            />
+          </div>
+        </div>
         <div className="col-md-12 mt-3">
           <MDEditor
             value={text}
@@ -48,7 +88,9 @@ function Sharebin() {
           />
         </div>
         <div className="col-md-12 mt-5 mb-3 text-center">
-          <button className="btn btn-outline-primary">Create</button>
+          <button className="btn btn-outline-primary" onClick={onCreate}>
+            Create
+          </button>
         </div>
       </div>
     </div>
