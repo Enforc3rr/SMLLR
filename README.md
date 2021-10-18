@@ -20,10 +20,10 @@ To Make Your Lengthy URL SmllR
 ![SmllR](./OtherStuff/ShareBin2.png)
 
 
-### ShareBin ( Desktop Version )
+### ShareBin ( Mobile Version )
 ![SmllR](./OtherStuff/ShareBin2.2.png)
 
 
 ### ShareBin ( Mobile Version )
-![SmllR](./OtherStuff/ShareBin1.1.png)
+![SmllR](./OtherStuff/ShareBin 1.1.png)
 
