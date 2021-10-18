@@ -12,18 +12,18 @@ To Make Your Lengthy URL SmllR
 
 
 ### ShareBin ( Desktop Version )
-![SmllR](./OtherStuff/ShareBin1.png)
+![ShareBin](./OtherStuff/ShareBin1.png)
 
 
 
 ### ShareBin ( Desktop Version )
-![SmllR](./OtherStuff/ShareBin2.png)
+![ShareBin](./OtherStuff/ShareBin2.png)
 
 
 ### ShareBin ( Mobile Version )
-![SmllR](./OtherStuff/ShareBin2.2.png)
+![ShareBin](./OtherStuff/ShareBin2.2.png)
 
 
 ### ShareBin ( Mobile Version )
-![SmllR](./OtherStuff/ShareBin 1.1.png)
+![ShareBin](./OtherStuff/ShareBin 1.1.png)
 
