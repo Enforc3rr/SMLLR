@@ -7,7 +7,7 @@ import Particles from "particles-bg";
 
 function DisplayMD() {
   const [md, setMd] = useState("");
-  const [title, setTitle] = useState("Default Title Here");
+  const [title, setTitle] = useState("Title Here");
 
   return (
     <div
@@ -32,12 +32,19 @@ function DisplayMD() {
         >
           <div className="row justify-content-center align-items-center">
             <div className="col-md-auto shadow mt-2 mb-2">
-              <h4 className="display-4">
+              <h4 className="display-4 text-center">
                 <u>{title}</u>
               </h4>
             </div>
             <div className="col-md-12 mt-3">
-              <ReactMarkdown remarkPlugins={[gfm]} children={`# Hello World`} />
+              <ReactMarkdown
+                remarkPlugins={[gfm]}
+                children={`
+# Hello World
+This Is Share Bin Demonstration Your typed Text will appear Here.
+
+- In well Formatted Manner`}
+              />
             </div>
           </div>
         </div>
