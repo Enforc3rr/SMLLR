@@ -4,10 +4,26 @@ import "mdbreact/dist/css/mdb.css";
 import ReactMarkdown from "react-markdown";
 import gfm from "remark-gfm";
 import Particles from "particles-bg";
+import { get } from "axios";
+import { useParams } from "react-router-dom";
 
 function DisplayMD() {
   const [md, setMd] = useState("");
-  const [title, setTitle] = useState("Title Here");
+  const [title, setTitle] = useState("");
+  let { sharebinId } = useParams();
+
+  useEffect(() => {
+    console.log(sharebinId);
+    get(`http://www.localhost:8081/sharebin/get/${sharebinId}`)
+      .then((response) => {
+        setMd(response.data.shareBinCode);
+        setTitle(response.data.shareBinTitle);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+    // eslint-disable-next-line
+  }, []);
 
   return (
     <div
@@ -37,14 +53,7 @@ function DisplayMD() {
               </h4>
             </div>
             <div className="col-md-12 mt-3">
-              <ReactMarkdown
-                remarkPlugins={[gfm]}
-                children={`
-# Hello World
-This Is Share Bin Demonstration Your typed Text will appear Here.
-
-- In well Formatted Manner`}
-              />
+              <ReactMarkdown remarkPlugins={[gfm]} children={md} />
             </div>
           </div>
         </div>

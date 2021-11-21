@@ -11,27 +11,32 @@ function Sharebin() {
   const [title, setTitle] = useState("");
 
   const onCreate = () => {
-    const shareBinDataDetails = {
-      title,
-    };
     const config = {
       headers: {
         "content-type": "multipart/form-data",
         "Allow-Access-Allow-Origin": "*",
       },
     };
-    const url = "";
+    const url = "http://localhost:8081/sharebin/create";
     const formData = new FormData();
 
-    formData.append("sharebinTitle", shareBinDataDetails);
-    formData.append("sharebinCode", text);
+    formData.append("shareBinTitle", title);
+    formData.append("shareBinCode", text);
 
-    post(url, formData, config).then((response) => {
-      console.log(response);
-      Swal.fire(response.data.message);
-      setTitle("");
-      setText("");
-    });
+    post(url, formData, config)
+      .then((response) => {
+        console.log(response);
+        Swal.fire(
+          `You can Access This Document From siteName.com/sb/${response.data}`
+        );
+        setTitle("");
+        setText("");
+      })
+      .catch((error) => {
+        Swal.fire(
+          `An error occurred while saving the document. Please try again later`
+        );
+      });
   };
 
   return (
