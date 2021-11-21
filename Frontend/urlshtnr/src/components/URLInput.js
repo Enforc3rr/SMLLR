@@ -8,15 +8,18 @@ function URLInput() {
   const [url, setUrl] = useState("");
 
   const correctingUrl = () => {
-    if (!(url.startsWith("http://www.") || url.startsWith("https://www."))) {
-      setUrl("http://www." + url);
-    } else if (!(url.startsWith("http") && url.startsWith("www."))) {
-      setUrl("http://" + url);
+    const urlRegex = new RegExp(
+      "((http|https)://)(www.)?" +
+        "[a-zA-Z0-9@:%._\\+~#?&//=]{2,256}\\.[a-z]" +
+        "{2,6}\\b([-a-zA-Z0-9@:%._\\+~#?&//=]*)"
+    );
+    if (urlRegex.test(url)) {
+      clickToAddUrl();
+    } else {
+      Swal.fire("Enter correctly formatted URL");
     }
   };
   const clickToAddUrl = () => {
-    correctingUrl();
-    console.log(url);
     const data = {
       mainUrl: url,
     };
@@ -51,7 +54,7 @@ function URLInput() {
             <u>URL Input</u>
           </h2>
         </div>
-        <div className="col-md-12 mt-5 mb-2">
+        <div className="col-md-12 mt-1 mb-2">
           <form>
             <div className="form-group row">
               <div
@@ -77,7 +80,7 @@ function URLInput() {
         <div className="col-md-12 mt-1 mb-3 text-center">
           <button
             className="btn btn-outline-primary btn-lg"
-            onClick={clickToAddUrl}
+            onClick={correctingUrl}
           >
             Shorten Your URL
           </button>
