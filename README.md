@@ -1,5 +1,5 @@
-# SMLLR
-To Make Your Lengthy URL SmllR
+# SMLLR & ShareBin
+To Make Your Lengthy URL SmllR And To Allow you share Text Documents In Proper Formatted Manner.
 
 
 ### SmllR ( Desktop Version )

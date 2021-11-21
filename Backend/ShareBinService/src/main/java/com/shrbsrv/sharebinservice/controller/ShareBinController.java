@@ -8,8 +8,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@CrossOrigin("*")
 @RequestMapping("/sharebin")
+@CrossOrigin(origins = "http://localhost:3000")
 public class ShareBinController {
 
     @Autowired
