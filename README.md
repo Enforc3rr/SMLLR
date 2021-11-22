@@ -27,3 +27,11 @@ To Make Your Lengthy URL SmllR And To Allow you share Text Documents In Proper F
 ### ShareBin ( Mobile Version )
 ![ShareBin](./OtherStuff/ShareBin1.1.png)
 
+
+### Data-Flow Diagram
+![DFD](./OtherStuff/DFD-SMllr.jpeg)
+
+### ER-Diagram 
+![ERD](./OtherStuff/ER-DiagramSMLLR.jpeg)
+
+
