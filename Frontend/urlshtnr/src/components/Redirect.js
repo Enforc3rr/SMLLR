@@ -8,7 +8,8 @@ function RedirectManual() {
   useEffect(() => {
     get(`http://localhost:8080/url/${smllrId}`)
       .then((response) => {
-        window.location.href = `http://${response.data.url}`;
+        console.log(response.data.url);
+        window.location.href = `${response.data.url}`;
       })
       .catch((error) => {
         setMessage(error.response.data.message);
