@@ -20,7 +20,8 @@ function DisplayMD() {
         setTitle(response.data.shareBinTitle);
       })
       .catch((error) => {
-        console.log(error);
+        setTitle(error.response.data.shareBinTitle);
+        setMd(error.response.data.shareBinCode);
       });
     // eslint-disable-next-line
   }, []);

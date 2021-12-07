@@ -17,9 +17,9 @@ database()
     .then(()=>console.log("Connected To Database"))
     .catch(()=>console.log("Connection To Database Failed"));
 
-// nodeSchedule.scheduleJob("*/2 * * * *",async ()=>{
-//     await keyGenerator();
-// })
+nodeSchedule.scheduleJob("*/1 * * * *",async ()=>{
+    await keyGenerator();
+})
 
 const PORT = 8000 || process.env.PORT;
 app.listen(PORT , ()=>console.log(`Key Generation Server Started At ${PORT}`));
