@@ -1,4 +1,4 @@
-package com.shrbsrv.sharebinservice.util;
+package com.shrbsrv.sharebinservice.keyUtil;
 
 import org.springframework.stereotype.Service;
 
