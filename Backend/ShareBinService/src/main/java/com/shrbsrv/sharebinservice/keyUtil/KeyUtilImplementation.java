@@ -1,4 +1,4 @@
-package com.shrbsrv.sharebinservice.util;
+package com.shrbsrv.sharebinservice.keyUtil;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
@@ -11,7 +11,7 @@ import java.util.HashMap;
 
 
 @Service
-public class KeyUtil implements KeyUtilService {
+public class KeyUtilImplementation implements KeyUtilService {
 
     @Autowired
     RestTemplate restTemplate;

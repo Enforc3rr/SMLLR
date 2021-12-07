@@ -10,7 +10,7 @@ import org.springframework.web.client.RestTemplate;
 import java.util.HashMap;
 
 @Service
-public class KeyUtil implements KeyUtilService {
+public class KeyUtilImplementation implements KeyUtilService {
 
     @Autowired
     RestTemplate restTemplate;
@@ -32,6 +32,7 @@ public class KeyUtil implements KeyUtilService {
         hashMap.put("keyToUpdate",key);
 
         HttpEntity<HashMap<String,String>> httpEntity = new HttpEntity<>(hashMap,httpHeaders);
+
 
         restTemplate.postForObject(url,httpEntity,UpdateKeyStatusClass.class);
     }
