@@ -6,6 +6,6 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface URLRepo extends CrudRepository<UrlEntity,String> {
 
-      @Query(nativeQuery = true , value = "SELECT * FROM URL_ENTITY WHERE SHORTEN_URL_PART= ?1")
+      @Query(nativeQuery = true , value = "SELECT * FROM smllr WHERE shorten_url_part= ?1")
       UrlEntity findUrl(String shortenPart);
 }
