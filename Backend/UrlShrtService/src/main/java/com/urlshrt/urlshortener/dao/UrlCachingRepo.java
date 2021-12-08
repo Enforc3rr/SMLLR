@@ -1,4 +1,4 @@
-package com.urlshrt.urlshortener.dto;
+package com.urlshrt.urlshortener.dao;
 
 import com.urlshrt.urlshortener.entity.UrlEntity;
 import org.springframework.stereotype.Repository;

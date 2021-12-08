@@ -1,6 +1,6 @@
 package com.urlshrt.urlshortener.service;
 
-import com.urlshrt.urlshortener.dto.UrlCachingRepo;
+import com.urlshrt.urlshortener.dao.UrlCachingRepo;
 import com.urlshrt.urlshortener.entity.UrlEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
