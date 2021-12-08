@@ -1,6 +1,6 @@
 package com.urlshrt.urlshortener.service;
 
-import com.urlshrt.urlshortener.dto.URLRepo;
+import com.urlshrt.urlshortener.dao.URLRepo;
 import com.urlshrt.urlshortener.entity.UrlEntity;
 import com.urlshrt.urlshortener.utils.KeyUtilService;
 import org.springframework.beans.factory.annotation.Autowired;
