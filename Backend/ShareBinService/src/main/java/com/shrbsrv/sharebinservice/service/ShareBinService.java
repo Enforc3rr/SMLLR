@@ -7,4 +7,6 @@ import org.springframework.stereotype.Service;
 public interface ShareBinService {
     String createShareBin(String shareBinTitle , String shareBinCode);
     ShareBinEntity getShareBin(String shareBinKey);
+    void incrementShareBinClicks(ShareBinEntity shareBinEntity);
+    void deleteShareBinCode(String shareBinKey);
 }
