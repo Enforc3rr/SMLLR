@@ -7,6 +7,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.concurrent.CompletableFuture;
+
 @RestController
 @RequestMapping("/sharebin")
 @CrossOrigin(origins = "http://localhost:3000")
@@ -25,9 +27,19 @@ public class ShareBinController {
     public ResponseEntity<?> getShareBin(@PathVariable("key") String key){
         ShareBinEntity shareBinEntity = shareBinService.getShareBin(key);
         if(shareBinEntity!=null){
-            return new ResponseEntity<>(shareBinEntity,HttpStatus.OK);
+            CompletableFuture.runAsync(()->{
+                shareBinService.incrementShareBinClicks(shareBinEntity);
+            });
+            if(shareBinEntity.getNumberOfClicks() < 9){
+                return new ResponseEntity<>(shareBinEntity,HttpStatus.OK);
+            }else{
+                shareBinService.deleteShareBinCode(shareBinEntity.getShareBinKey());
+                return new ResponseEntity<>(shareBinEntity
+                        , HttpStatus.OK);
+            }
         }else{
-            return new ResponseEntity<>("Not Found",HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(new ShareBinEntity("Wrong Key word/Click Limit Exceeded"
+                    , "# ERROR \n You've Typed wrong Key word \n # OR \n Click Limit Exceeded"),HttpStatus.NOT_FOUND);
         }
     }
 }
