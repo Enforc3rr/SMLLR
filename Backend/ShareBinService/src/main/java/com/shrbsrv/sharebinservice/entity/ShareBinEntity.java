@@ -1,16 +1,26 @@
 package com.shrbsrv.sharebinservice.entity;
 
-import org.springframework.web.multipart.MultipartFile;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "sharebin")
 public class ShareBinEntity {
     @Id
+    @Column(name = "shareBinKey")
     private String shareBinKey;
+
+    @Column(name="shareBinTitle")
     private String shareBinTitle;
+
+    @Column(name = "shareBinCode")
     private String shareBinCode;
+
+    @Column(name = "numberOfClicks")
+    private int numberOfClicks;
 
     public ShareBinEntity() {
     }
@@ -18,6 +28,12 @@ public class ShareBinEntity {
     public ShareBinEntity(String shareBinTitle, String shareBinCode) {
         this.shareBinTitle = shareBinTitle;
         this.shareBinCode = shareBinCode;
+    }
+
+    public ShareBinEntity(String shareBinTitle, String shareBinCode, int numberOfClicks) {
+        this.shareBinTitle = shareBinTitle;
+        this.shareBinCode = shareBinCode;
+        this.numberOfClicks = numberOfClicks;
     }
 
     public String getShareBinKey() {
@@ -44,6 +60,14 @@ public class ShareBinEntity {
         this.shareBinCode = shareBinCode;
     }
 
+
+    public int getNumberOfClicks() {
+        return numberOfClicks;
+    }
+
+    public void setNumberOfClicks(int numberOfClicks) {
+        this.numberOfClicks = numberOfClicks;
+    }
 
     @Override
     public String toString() {
