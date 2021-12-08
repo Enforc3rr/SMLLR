@@ -5,42 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f94911d9-58ed-420e-b33a-b57d2544c4f1" name="Changes" comment="Added Deletion Part On Redis And MySQL And Improved Bug in URL count">
-      <change afterPath="$PROJECT_DIR$/../ShareBinService/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShareBinService/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShareBinService/.idea/libraries/Maven__com_sun_activation_jakarta_activation_1_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShareBinService/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShareBinService/.idea/libraries/Maven__jakarta_persistence_jakarta_persistence_api_2_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShareBinService/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_1_3_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShareBinService/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShareBinService/.idea/libraries/Maven__org_dom4j_dom4j_2_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShareBinService/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShareBinService/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShareBinService/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_2_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShareBinService/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_32_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShareBinService/.idea/libraries/Maven__org_javassist_javassist_3_27_0_GA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShareBinService/.idea/libraries/Maven__org_jboss_jandex_2_2_3_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShareBinService/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_2_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShareBinService/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_5_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShareBinService/.idea/libraries/Maven__org_springframework_spring_aspects_5_3_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShareBinService/.idea/libraries/Maven__org_springframework_spring_orm_5_3_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShareBinService/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShareBinService/src/main/java/com/shrbsrv/sharebinservice/controller/ShareBinController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShareBinService/src/main/java/com/shrbsrv/sharebinservice/dto/ShareBinRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShareBinService/src/main/java/com/shrbsrv/sharebinservice/entity/ShareBinEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShareBinService/src/main/java/com/shrbsrv/sharebinservice/service/ShareBinService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShareBinService/src/main/java/com/shrbsrv/sharebinservice/service/ShareBinServiceImplementation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShareBinService/src/main/java/com/shrbsrv/sharebinservice/util/KeyClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShareBinService/src/main/java/com/shrbsrv/sharebinservice/util/KeyUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShareBinService/src/main/java/com/shrbsrv/sharebinservice/util/KeyUtilService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShareBinService/src/main/java/com/shrbsrv/sharebinservice/util/UpdateKeyStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ShareBinService/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jdbc_2_5_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ShareBinService/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_5_5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ShareBinService/.idea/libraries/Maven__org_springframework_data_spring_data_jdbc_2_2_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ShareBinService/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_5_5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ShareBinService/.idea/libraries/Maven__org_springframework_data_spring_data_relational_2_2_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ShareBinService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ShareBinService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ShareBinService/sharebinservice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ShareBinService/sharebinservice.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ShareBinService/src/main/java/com/shrbsrv/sharebinservice/SharebinserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ShareBinService/src/main/java/com/shrbsrv/sharebinservice/SharebinserviceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ShareBinService/src/main/java/com/shrbsrv/sharebinservice/controller/MdController.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShareBinService/src/main/java/com/shrbsrv/sharebinservice/keyUtil/UpdateKeyStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShareBinService/src/main/java/com/shrbsrv/sharebinservice/configuration/RedisConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShareBinService/src/main/java/com/shrbsrv/sharebinservice/controller/ShareBinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ShareBinService/src/main/java/com/shrbsrv/sharebinservice/controller/ShareBinController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShareBinService/src/main/java/com/shrbsrv/sharebinservice/dto/ShareBinRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ShareBinService/src/main/java/com/shrbsrv/sharebinservice/dto/ShareBinRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShareBinService/src/main/java/com/shrbsrv/sharebinservice/entity/ShareBinEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ShareBinService/src/main/java/com/shrbsrv/sharebinservice/entity/ShareBinEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShareBinService/src/main/java/com/shrbsrv/sharebinservice/service/ShareBinService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ShareBinService/src/main/java/com/shrbsrv/sharebinservice/service/ShareBinService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShareBinService/src/main/java/com/shrbsrv/sharebinservice/service/ShareBinServiceImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ShareBinService/src/main/java/com/shrbsrv/sharebinservice/service/ShareBinServiceImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShareBinService/src/main/java/com/shrbsrv/sharebinservice/util/KeyClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ShareBinService/src/main/java/com/shrbsrv/sharebinservice/keyUtil/KeyClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShareBinService/src/main/java/com/shrbsrv/sharebinservice/util/KeyUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ShareBinService/src/main/java/com/shrbsrv/sharebinservice/keyUtil/KeyUtilImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShareBinService/src/main/java/com/shrbsrv/sharebinservice/util/KeyUtilService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ShareBinService/src/main/java/com/shrbsrv/sharebinservice/keyUtil/KeyUtilService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShareBinService/src/main/java/com/shrbsrv/sharebinservice/util/UpdateKeyStatus.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ShareBinService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../ShareBinService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShareBinService/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../ShareBinService/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShareBinService/target/classes/com/shrbsrv/sharebinservice/configuration/RedisConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShareBinService/target/classes/com/shrbsrv/sharebinservice/controller/ShareBinController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ShareBinService/target/classes/com/shrbsrv/sharebinservice/controller/ShareBinController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShareBinService/target/classes/com/shrbsrv/sharebinservice/dto/ShareBinRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ShareBinService/target/classes/com/shrbsrv/sharebinservice/dto/ShareBinRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShareBinService/target/classes/com/shrbsrv/sharebinservice/entity/ShareBinEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ShareBinService/target/classes/com/shrbsrv/sharebinservice/entity/ShareBinEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShareBinService/target/classes/com/shrbsrv/sharebinservice/service/ShareBinService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ShareBinService/target/classes/com/shrbsrv/sharebinservice/service/ShareBinService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShareBinService/target/classes/com/shrbsrv/sharebinservice/service/ShareBinServiceImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ShareBinService/target/classes/com/shrbsrv/sharebinservice/service/ShareBinServiceImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShareBinService/target/classes/com/shrbsrv/sharebinservice/util/KeyClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShareBinService/target/classes/com/shrbsrv/sharebinservice/util/KeyUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShareBinService/target/classes/com/shrbsrv/sharebinservice/util/KeyUtilService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShareBinService/target/classes/com/shrbsrv/sharebinservice/util/UpdateKeyStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/dto/URLRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/dto/URLRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/entity/UrlEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/entity/UrlEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/utils/KeyUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/urlshrt/urlshortener/utils/KeyUtilImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/dto/URLRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/dto/URLRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/entity/UrlEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/entity/UrlEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/urlshrt/urlshortener/utils/KeyUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/urlshortener.iml" beforeDir="false" afterPath="$PROJECT_DIR$/urlshortener.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frontend/urlshtnr/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/urlshtnr/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frontend/urlshtnr/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/urlshtnr/src/components/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frontend/urlshtnr/src/components/Redirect.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/urlshtnr/src/components/Redirect.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frontend/urlshtnr/src/components/URLInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/urlshtnr/src/components/URLInput.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +78,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="ExpandSpringBootSpringBootSettingsPanel" value="false" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -87,7 +91,7 @@
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reactor" />
   </component>
@@ -96,7 +100,11 @@
     <option name="stackFrameCustomizationEnabled" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Programs\Projects\urlshortener\Backend\UrlShrtService\src\main\resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programs\Projects\urlshortener\Backend\UrlShrtService\src\main\resources" />
       <recent name="D:\Programs\Projects\urlshortener\Backend" />
     </key>
   </component>
@@ -104,6 +112,13 @@
     <configuration name="UrlshortenerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="urlshortener" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.urlshrt.urlshortener.UrlshortenerApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
+      <envs>
+        <env name="passwordSql" value="gtaplayer01" />
+        <env name="usernameSql" value="root" />
+        <env name="DB" value="jdbc:mysql://127.0.0.1:3306/smllr" />
+      </envs>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -134,6 +149,17 @@
       <workItem from="1633595317964" duration="2727000" />
       <workItem from="1634350092761" duration="6974000" />
       <workItem from="1634494303507" duration="99000" />
+      <workItem from="1634762275402" duration="41000" />
+      <workItem from="1637171896775" duration="248000" />
+      <workItem from="1637493744048" duration="413000" />
+      <workItem from="1637494190271" duration="995000" />
+      <workItem from="1637497942126" duration="1349000" />
+      <workItem from="1637507298712" duration="898000" />
+      <workItem from="1637586807535" duration="1558000" />
+      <workItem from="1637785592813" duration="596000" />
+      <workItem from="1638787319231" duration="604000" />
+      <workItem from="1638894928442" duration="9075000" />
+      <workItem from="1638907224272" duration="7085000" />
     </task>
     <task id="LOCAL-00001" summary="Added URL retrieval API">
       <created>1632697197606</created>
