@@ -57,16 +57,17 @@ to this web application but because of some time constrains I have not been able
     - This works in a very Simple way , It basically makes GET request to the Key Generation Service and Assign that key to the created markdown Document.
 
 ## Response Time :
-- #### KeyGeneration Service
+- #### KeyGeneration Service  
+
 ![KeyGen](./OtherStuff/KeyGenRes.png)
 
 - #### SmllR Service  
 
 Before  
-![smllrB](./OtherStuff/SmllR-ResBefore)
+![smllrB](./OtherStuff/SmllR-ResBefore.png)
 
 After 
-![smllrA](./OtherStuff/SmllR-ResAfter)
+![smllrA](./OtherStuff/SmllR-ResAfter.png)
 
 ## Endpoints :
 
