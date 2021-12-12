@@ -59,15 +59,15 @@ to this web application but because of some time constrains I have not been able
 ## Response Time :
 - #### KeyGeneration Service  
 
-![KeyGen](./OtherStuff/KeyGenRes.png)
+![KeyGen](./OtherStuff/KeyGenRes.JPG})
 
 - #### SmllR Service  
 
 Before  
-![smllrB](./OtherStuff/SmllR-ResBefore.png)
+![smllrB](./OtherStuff/SmllR-ResBefore.JPG)
 
 After 
-![smllrA](./OtherStuff/SmllR-ResAfter.png)
+![smllrA](./OtherStuff/SmllR-ResAfter.JPG)
 
 ## Endpoints :
 
