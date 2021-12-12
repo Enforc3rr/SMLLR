@@ -59,14 +59,14 @@ to this web application but because of some time constrains I have not been able
 ## Response Time :
 - #### KeyGeneration Service  
 
-![KeyGen](./OtherStuff/KeyGenRes.JPG})
+![KeyGen](./OtherStuff/KeyGenRes.JPG)
 
 - #### SmllR Service  
 
-Before  
+Before (Data gets saved to redis)  
 ![smllrB](./OtherStuff/SmllR-ResBefore.JPG)
 
-After 
+After (Data gets saved to redis) 
 ![smllrA](./OtherStuff/SmllR-ResAfter.JPG)
 
 ## Endpoints :
