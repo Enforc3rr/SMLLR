@@ -2,8 +2,8 @@
 In the world where sharing of well formatted data has become a necessity and Our URL lengths have gotten longer.
 That's where SmllR and Sharebin will come into play as it's obvious by the naming scheme that
 
-- Smllr is going to be useful for making lengthy URLs shorter. 
-- Sharebin will allow users to share text documents in well formatted manner as it uses markdown as markup language.
+- **Smllr** is going to be useful for making lengthy URLs shorter. 
+- **Sharebin** will allow users to share text documents in well formatted manner as it uses markdown as markup language.
 
 
 ## Tech Stack Used :
@@ -35,7 +35,7 @@ to this web application but because of some time constrains I have not been able
       - Under the hood , KeyGen Server uses In-built Crypto Module of Nodejs to work and generate unique keys in hex encoding every minute.
   - #### Working
      - KeyGen Service uses mongoDB to primarily store the keys but instead of just providing the key straight out of mongoDB , in order to speed up the process of key retrieval redis is used.
-     - The way Redis is integrated is , It keeps 15 keys in its database that it automatically retrieves from MongoDB when key count in Redis falls below 4.
+     - The way Redis is integrated is , It keeps 15 keys in its database that it automatically retrieves those keys whose `isBeingUsed` is marked as false and in retrieval process it marks them true from MongoDB when key count in Redis falls below 4.
      - Thus , Redis acts as a primary database for key retrieval purpose.
   - #### Importance Of Such design
      - Importance of having such design is that time required to retrieve keys from server reduces down to 1/10th of what it would have taken to retrieve it from a database like MongoDB.
@@ -57,32 +57,66 @@ to this web application but because of some time constrains I have not been able
     - This works in a very Simple way , It basically makes GET request to the Key Generation Service and Assign that key to the created markdown Document.
 ## Endpoints :
 
+- ### Key-Generation Service  
+  - GET : /localhost:8000/key/getKey
+  - PUT : /localhost:8000/key/updateKeyStatus/:KeyValue
+- ### ShareBin Service 
+  - GET : /localhost:8081/sharebin/create (Content-Type : multipart/form-data )
+  - POST : /localhost:8081/sharebin/get/:Key
+- ### SMLLR Service 
+  - GET : /localhost:8080/smllr/get/:keyValue
+  - POST : /localhost:8081/smllr/add (Content-Type : application/json)
 
+
+
+
+## Models :
+
+- #### Key Model
+```
+  key : String ,
+  isBeingUsed : Boolean
+```
+
+- #### SmllR Model
+```
+{
+  shortenUrlPart : String ,
+  mainUrl : String ,
+  creationDate : Date, 
+  numberOfClicks : int
+}
+```
+
+- #### ShareBin Model
+```
+{
+    shareBinKey : String ,
+    shareBinTitle : String ,
+    shareBinCode : String ,
+    numberOfClicks : int
+}
+```
+
+## Working 
+![working](./OtherStuff/WorkingVid.gif)
 
 ## UI :
-
 
 #### SmllR ( Desktop Version )
 ![SmllR](./OtherStuff/SmllR1.png)
 
-
 #### SmllR ( Mobile Version )
 ![SmllR](./OtherStuff/SmllR2.png)
-
-
 
 #### ShareBin ( Desktop Version )
 ![ShareBin](./OtherStuff/ShareBin1.png)
 
-
-
 #### ShareBin ( Desktop Version )
 ![ShareBin](./OtherStuff/ShareBin2.png)
 
-
 #### ShareBin ( Mobile Version )
 ![ShareBin](./OtherStuff/ShareBin2.2.png)
-
 
 #### ShareBin ( Mobile Version )
 ![ShareBin](./OtherStuff/ShareBin1.1.png)
