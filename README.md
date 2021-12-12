@@ -1,3 +1,4 @@
+![logo](./OtherStuff/logo.jpg)
 # SMLLR & ShareBin
 In the world where sharing of well formatted data has become a necessity and Our URL lengths have gotten longer.
 That's where SmllR and Sharebin will come into play as it's obvious by the naming scheme that
