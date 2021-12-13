@@ -36,7 +36,7 @@ to this web application but because of some time constrains I have not been able
       - Under the hood , KeyGen Server uses In-built Crypto Module of Nodejs to work and generate unique keys in hex encoding every minute.
   - #### Working
      - KeyGen Service uses mongoDB to primarily store the keys but instead of just providing the key straight out of mongoDB , in order to speed up the process of key retrieval redis is used.
-     - The way Redis is integrated is , It keeps 15 keys in its database that it automatically retrieves those keys whose `isBeingUsed` is marked as false and in retrieval process it marks them true from MongoDB when key count in Redis falls below 4.
+     - The way Redis is integrated is , It keeps 15 keys in its database that it automatically retrieves from mongoDB and it retrieves those keys whose `isBeingUsed` is marked as false and in retrieval process it marks them true , when key count in Redis falls below 4.
      - Thus , Redis acts as a primary database for key retrieval purpose.
   - #### Importance Of Such design
      - Importance of having such design is that time required to retrieve keys from server reduces down to 1/10th of what it would have taken to retrieve it from a database like MongoDB.
